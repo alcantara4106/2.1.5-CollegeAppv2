@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Family Member Content"/>
+
+<TextView
+    android:id="@+id/familyMemberFirstNameView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="First name view"
+    android:layout_marginTop="33dp"
+    android:layout_below="@+id/textView3"
+    android:layout_alignParentStart="true"
+    android:layout_toStartOf="@+id/familyMemberEditFirstNameView"/>
+
+<TextView
+    android:id="@+id/familyMemberLastNameView"
+    android:layout_width="131dp"
+    android:layout_height="wrap_content"
+    android:text="Last name view"
+    android:layout_marginTop="41dp"
+    android:layout_below="@+id/familyMemberFirstNameView"
+    android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/familyMemberEditFirstNameView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_toEndOf="@+id/familyMemberLastNameView"
+        android:layout_alignBottom="@+id/familyMemberFirstNameView"/>
+
+    <EditText
+        android:id="@+id/familyMemberEditLastNameView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignEnd="@+id/familyMemberEditFirstNameView"
+        android:layout_toEndOf="@+id/familyMemberLastNameView"
+        android:layout_alignBottom="@+id/familyMemberLastNameView"
+        />
+
+    <Button
+        android:id="@+id/familyMemberSubmitButton"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/familyMemberEditLastNameView"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:text="Update Names"/>
+
+</RelativeLayout>
