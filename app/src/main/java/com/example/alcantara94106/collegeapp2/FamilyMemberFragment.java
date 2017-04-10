@@ -23,9 +23,6 @@ public class FamilyMemberFragment extends android.support.v4.app.Fragment {
     private FamilyMember daddy; //#9, probably incorrect
     //daddy.setFirstName("Bob");
 
-
-
-
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle){
         super.onCreateView(inflater, group, bundle);
         View rootView = inflater.inflate(R.layout.fragment_family_member, group, false);

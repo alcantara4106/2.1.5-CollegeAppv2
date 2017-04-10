@@ -12,40 +12,48 @@
 
 <TextView
     android:id="@+id/profileFirstNameView"
-    android:layout_width="177dp"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="First name view"
-    android:layout_marginTop="12dp"
+    android:layout_marginTop="33dp"
     android:layout_below="@+id/textView2"
+    android:layout_alignParentStart="true"
+    android:layout_toStartOf="@+id/profileEditFirstNameView"
     />
 
 <TextView
     android:id="@+id/profileLastNameView"
-    android:layout_width="177dp"
+    android:layout_width="131dp"
     android:layout_height="wrap_content"
     android:text="Last name view"
-    android:layout_marginTop="15dp"
-    android:layout_below="@+id/profileEditFirstNameView"
+    android:layout_marginTop="41dp"
+    android:layout_below="@+id/profileFirstNameView"
     android:layout_alignParentStart="true"
     />
 
 <EditText
 android:id="@+id/profileEditFirstNameView"
-android:layout_width="103dp"
-android:layout_height="20dp"
-
-android:layout_toEndOf="@+id/profileLastNameView"
-android:layout_alignTop="@+id/profileFirstNameView"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_toEndOf="@+id/profileLastNameView"
+    android:layout_alignBottom="@+id/profileFirstNameView"
 />
 
 <EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     android:id="@+id/profileEditLastNameView"
-    android:layout_alignTop="@+id/profileLastNameView"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
     android:layout_alignEnd="@+id/profileEditFirstNameView"
     android:layout_toEndOf="@+id/profileLastNameView"
     android:layout_alignBottom="@+id/profileLastNameView"
     />
+
+    <Button
+        android:id="@+id/profileSubmitButton"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/profileEditLastNameView"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:text="Update Names"/>
 
 </RelativeLayout>
