@@ -1,11 +1,7 @@
 package com.example.alcantara94106.collegeapp2;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -85,7 +81,7 @@ public class ApplicantActivity extends AppCompatActivity
 
         if (id == R.id.family_member) {
             // Handle the camera action
-            contentFragment = new FamilyMemberFragment();
+            contentFragment = new GuardianFragment();
         } else if (id == R.id.profile) {
             contentFragment = new ProfileFragment();
         }

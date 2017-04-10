@@ -4,7 +4,7 @@ package com.example.alcantara94106.collegeapp2;
  * Created by alcantara94106 on 3/9/2017.
  */
 
-public class FamilyMember {
+public abstract class FamilyMember {
     private String firstName;
     private String lastName;
 
