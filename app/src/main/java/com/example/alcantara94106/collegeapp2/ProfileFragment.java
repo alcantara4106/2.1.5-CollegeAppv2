@@ -1,6 +1,7 @@
 package com.example.alcantara94106.collegeapp2;
 
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,7 @@ public class ProfileFragment extends android.support.v4.app.Fragment {
     private TextView mLastName;
     private EditText mEditLastName;
     private Button mSubmitButton;
+    private Button mDateButton;
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle){
@@ -31,6 +33,15 @@ public class ProfileFragment extends android.support.v4.app.Fragment {
             public void onClick(View v) {
                 mFirstName.setText(mEditFirstName.getText());
                 mLastName.setText(mEditLastName.getText());
+            }
+        });
+        mDateButton = (Button) rootView.findViewById(R.id.profileDateButton);
+        mDateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fm = getFragmentManager();
+                DatePickerFragment dialog = new DatePickerFragment();
+                dialog.show(fm, "DialogDateOfBirth");
             }
         });
 

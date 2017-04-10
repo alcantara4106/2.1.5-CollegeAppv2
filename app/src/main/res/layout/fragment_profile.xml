@@ -56,4 +56,12 @@ android:id="@+id/profileEditFirstNameView"
         android:layout_width="100dp"
         android:text="Update Names"/>
 
+    <Button
+        android:id="@+id/profileDateButton"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:text="Select Date"
+        android:layout_alignBottom="@+id/profileSubmitButton"
+        android:layout_toEndOf="@+id/profileSubmitButton" />
+
 </RelativeLayout>
